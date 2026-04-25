@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<!-- DTD (Internal) -->
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book+)>
+    <!ELEMENT book (title, author, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<!-- XML + XSD Reference -->
+<bookstore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="bookstore.xsd">
+
+    <book>
+        <title><br>Java Programming</br></title>
+        <author><br>James Gosling</br></author>
+        <price><br>500</br></price>
+    </book>
+
+    <book>
+        <title><br>Web Development</br></title>
+        <author><br>David Flanagan</br></author>
+        <price><br>400</br></price>
+    </book>
+
+</bookstore>
